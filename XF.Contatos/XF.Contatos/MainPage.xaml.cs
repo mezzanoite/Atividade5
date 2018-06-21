@@ -13,5 +13,20 @@ namespace XF.Contatos
 		{
 			InitializeComponent();
 		}
-	}
+
+        private async void btnLigar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new API.PhoneView());
+        }
+
+        private async void btnLocation_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GPS.CoordenadaView());
+        }
+
+        private async void btnContacts_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Contatos.ContatosView());
+        }
+    }
 }

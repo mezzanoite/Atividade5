@@ -5,10 +5,12 @@
              x:Class="XF.Contatos.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label FontSize="20" Text="Phone API"></Label>
+        <Button x:Name="btnLigar" Text="Telefone" Clicked="btnLigar_Clicked"></Button>
+        <Label FontSize="20" Text="GeoLocation - GPS"></Label>
+        <Button x:Name="btnLocation" Text="Coordenada" Clicked="btnLocation_Clicked"></Button>
+        <Label FontSize="20" Text="Contatos"></Label>
+        <Button x:Name="btnContacts" Text="Contatos" Clicked="btnContacts_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>

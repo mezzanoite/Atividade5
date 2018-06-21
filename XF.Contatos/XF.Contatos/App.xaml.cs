@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XF.Contatos.Contatos;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace XF.Contatos
@@ -11,8 +12,9 @@ namespace XF.Contatos
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
-		}
+			//MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new ContatosView());
+        }
 
 		protected override void OnStart ()
 		{
